@@ -353,13 +353,13 @@ By applying symplectic reduction, we get a manifold $V_P=Z_P/T_\Gamma$. It is ca
 
 A toric manifold $V_{\Sigma_P}$ is a projective algebraic variety. The reduced symplectic form $\omega_{red}$ and metric induced by the Riemannian submersion  $Z_P \rightarrow V_P$ are equivalent to the symplectic form induced by the projective embedding and the metric coming from the algebraic structure. Let us also notice the beautiful fact that the set of Delzant polytopes is in bijective correspondence with the set of equivariant symplectomorphism classes of symplectic toric manifolds~\cite{Delz}.
 
-The important fact is that $R_P$ projects on real toric manifold $U_P$, which is a set of real points of complex toric manifold. The fiber is $D_\Gamma$. The main results of this paragraph can be illustrated by the following diagram~\eqref{diag1}, where fibers of the projections $\pi$ and $r$ are $T_\Gamma$ and $D_\Gamma$, and all dimensions are real.
+The important fact is that $R_P$ projects on real toric manifold $U_P$, which is a set of real points of complex toric manifold. The fiber is $D_\Gamma$. The main results of this paragraph can be illustrated by the following diagram~\eqref{diag1}, where fibers of the projections $\pi$ and $r$ are $T_\Gamma$ and $D_\Gamma$, and all dimensions are real except of ${\mathbb C}^{m}$.
 
 \begin{equation}\label{diag1}
 \begin{tikzcd}
 R_P^n \arrow[hookrightarrow]{r} \arrow[rightarrow]{d}{r}
   & Z_P^{m+n} \arrow[hookrightarrow]{r}{i}\arrow[rightarrow]{d}{\pi}
-  & {\mathbb C}^{2m} \\
+  & {\mathbb C}^{m} \\
 U_P^n \arrow[hookrightarrow]{r}
   & V_P^{2n}
 \end{tikzcd}
@@ -472,14 +472,44 @@ $$
 $$
 where $\gamma_{k1} > 0$, $c > 0$, $\gamma_{j2} > 0$, $\gamma_{i2} < 0$  for $1 \leq k \leq m$, $1 \leq j \leq p$, $p+1 \leq i \leq m$ (this is the canonical form of an intersection of two quadrics described in~\cite[Proposition 4.2]{MP}). The second equation defines a cone over the product of two ellipsoids of dimensions $2p-1$ and $2q-1$. By intersecting it with ellipsoid of dimension $2m-1$, defined by first equation, we obtain that $Z_\Gamma \cong S^{2p-1} \times S^{2q-1}$ and $R_\Gamma \cong S^{p-1}\times S^{q-1}$. Let us note that the corresponding polytope is combinatorially equivalent to the product of simplices $\triangle^{p-1}\times\triangle^{q-1}$.
 
-The topological type of $N$ is defined by three numbers $p$,$q$ and $l$, where $p+q=m$ and $0 \leq l \leq p$. It can be described as the total space of a bundle
+
+
+In~\cite{MP} it is proved that
+$$ N_l (p,q)= R_\Gamma \times_{D_\Gamma} T_\Gamma \approx (S^{p-1}\times S^{q-1}) \times_{\mathbb{Z}_2\times \mathbb{Z}_2} S^1 \times S^1,
+$$
+where the actions on the right side are antipodal involutions, and on the left side they are given by
+\begin{align*}
+&\varphi_1: (u_1,\dots ,u_m)\rightarrow(-u_1,\dots,-u_k,-u_{k+1},\dots,-u_p,u_{p+1},\dots,u_m),\\
+&\varphi_2: (u_1,\dots ,u_m)\rightarrow(-u_1,\dots,-u_k,u_{k+1},\dots,u_p,-u_{p+1},\dots,-u_m).
+\end{align*}
+
+\noindent So the topological type of $N$ is defined by three numbers $p$,$q$ and $l$ where $p+q=m$ and $0 \leq l \leq p$. 
+
+In general there is a fiber bundle 
 \[
 \begin{tikzcd}
-N_l(p,q)\arrow[rightarrow]{r}{N(q)}
-  & N(p)
+R_\Gamma \times_{D_\Gamma} T_\Gamma = N_\Gamma \arrow[rightarrow]{r}{R_\Gamma}
+  & T_\Gamma/D_\Gamma \cong T^{m-n},
 \end{tikzcd}
 \]
-whose topology depends on $l$. If numbers $p$,$q$ and $l$ are even then this bundle is trivial, and if $p$, $q$ are even and $l$ is odd this bundle is nontrivial. In addition, manifold $N$ is the total space of a bundle $N\rightarrow T^2$ with fiber $R_\Gamma \cong S^{p-1}\times S^{q-1}$, and also of a bundle $N\rightarrow U_\Gamma$ with fiber $T^2$. The details of the classification of manifolds $N_l(p,q)$ and the bundles above can be found in~\cite{MP}.
+so in case of $m-n=2$ we get
+\[
+\begin{tikzcd}[column sep=large]
+N_l(p,q) \arrow[rightarrow]{r}{S^{p-1} \times S^{q-1}}
+  & T^{2}.
+\end{tikzcd}
+\]
+Notice that transformations of fibers in this bundle are described by $\varphi_1$ and $\varphi_2$. If $p$ is odd then $\varphi_1$ changes the orientation of $R_\Gamma = S^{p-1} \times S^{q-1}$. This implies that the fiber bundle is unorientable and hence is not trivial. Same argument works if $l+q$ is odd.
+
+We also have $N_l (p,q) =N(p)\times_{{\mathbb Z}/2} (S^{q-1} \times S^1) $ because $\varphi_1$ does not act on $S^{q-1}$ and acts by antipodal involution on $S^{p-1}$
+(where $N(p)$ is the manifold from the case of $m-n=1$). This also gives us another interesting fiber bundle
+\[
+\begin{tikzcd}[column sep=large]
+N_l(p,q) \arrow[rightarrow]{r}{N(p)}
+  & N(q)
+\end{tikzcd}
+\]
+which topology depends on $l$. If $p$ or $l+q$ is odd then this bundle is non-trivial, because we know that $N_l(p,q) \neq R_\Gamma \times T^2 = S^{p-1} \times S^{q-1} \times T^2 = N(p) \times N(q)$. If numbers $p$,$q$ and $l$ are even then this bundle is trivial, because of the fact that antipodal involution of odd-dimensional sphere (or even-dimensional vector space) is isotopic to the identity by rotations in two-planes.
 
 The manifold $N$ is a minimal submanifold of $Z_\Gamma \cong S^{2p-1} \times S^{2q-1}$ and an H-minimal Lagrangian submanifold of ${\mathbb C}^m$. If $p=q=2$ and $l=1$ we get a minimal embedding $N_1(2,2)\hookrightarrow Z_\Gamma \cong S^{3} \times S^{3}$, where $N_1(2,2)\rightarrow T^2$ is a nontrivial bundle with fiber $T^2$. In the same time there is a trivial bundle $T^4=T^2\times T^2=N_0(p,q)$ which minimally embeds into $Z_\Gamma \cong S^{3} \times S^{3}$. The latter embedding is a product of two minimal embeddings $T^2 \hookrightarrow S^3$ constructed from one quadric from the previous example.
 \end{exam}
@@ -510,13 +540,13 @@ The groups $T_\Delta$, $T_{\Gamma \Delta}$, $D_\Delta$, and $D_{\Gamma \Delta}$ 
 
 The idea is to use the first set of quadrics to produce a toric manifold $V_\Gamma$ via symplectic reduction as in diagram \eqref{diag1}, and
 then use the second set of quadrics to define an H-minimal Lagrangian submanifold in $V_\Gamma$. We have the toric manifold $V_\Gamma=Z_\Gamma/T_\Gamma$ with a Hamiltonian torus action $T_\Delta \colon V_\Gamma$. The moment map $\mu_\Delta \colon V_\Gamma \rightarrow {\mathbb R}^{m-l}$ for the action $T_\Delta : V_\Gamma$ is given by the formula  $$\mu_\Delta(x)=\Delta \cdot \mu ( \pi^{-1}(x))= \Delta \cdot (|z_1|^2,\ldots,|z_m|^2)^t$$
-where $\pi^{-1}(x)=(z_1,\ldots,z_m)$ is any preimage of $x$ by the map $\pi \colon Z_\Gamma \rightarrow V_\Gamma$. Now we can apply symplectic reduction by the action $T_\Delta \colon V_\Gamma$. Everything we need can be seen on the following diagram (dimensions are all real):
+where $\pi^{-1}(x)=(z_1,\ldots,z_m)$ is any preimage of $x$ by the map $\pi \colon Z_\Gamma \rightarrow V_\Gamma$. Now we can apply symplectic reduction by the action $T_\Delta \colon V_\Gamma$. Everything we need can be seen on the following diagram:
 
 \[
 \begin{tikzcd}
   & Z_{\Gamma \Delta}^{n+l} \arrow[hookrightarrow]{r} \arrow[rightarrow]{d}
   & Z_{\Gamma}^{m+n} \arrow[hookrightarrow]{r} \arrow[rightarrow]{d}{\pi}
-  & {\mathbb C}^{2m} \arrow[dotted]{dl}{\text{symplectic reduction by the action of $T_\Gamma$}}\\
+  & {\mathbb C}^{m} \arrow[dotted]{dl}{\text{symplectic reduction by the action of $T_\Gamma$}}\\
 (R_{\Gamma \Delta}/D_\Gamma)^{n+l-m} \arrow[hookrightarrow]{r} \arrow[rightarrow]{d}{\tilde{r}}
   & (Z_{\Gamma \Delta}/T_\Gamma)^{2n+l-m} \arrow[hookrightarrow]{r}{i}\arrow[rightarrow]{d}{\tilde{\pi}}
   & V_\Gamma^{2n} \arrow[dotted]{dl}{\text{symplectic reduction by the action of $T_\Delta$}}\\
@@ -526,14 +556,14 @@ U_{\Gamma \Delta}^{n+l-m} \arrow[hookrightarrow]{r}
 \]
 where the fibers of the projections $\tilde{\pi}$ and $\tilde{r}$ are $T_\Delta$ and $D_\Delta$, respectively.
 
-Consider the submanifold $$\tilde{N} = \tilde{\pi} ^{-1}(U_{\Gamma \Delta}) \cong (R_{\Gamma \Delta}/D_\Gamma) \times_{D_\Delta} T_\Delta$$ of the manifold $ Z_{\Gamma \Delta}/T_\Gamma  \subset V_\Gamma $. Similarly to Theorems~\ref{theoA} and~\ref{theoB}, we get:
+Consider the $n$-dimensional submanifold $$\tilde{N} = \tilde{\pi} ^{-1}(U_{\Gamma \Delta}) \cong (R_{\Gamma \Delta}/D_\Gamma) \times_{D_\Delta} T_\Delta$$ of the manifold $ Z_{\Gamma \Delta}/T_\Gamma  \subset V_\Gamma $. Similarly to Theorems~\ref{theoA} and~\ref{theoB}, we get:
 \begin{main}
 The manifold $\tilde{N}$ is a minimal submanifold of the manifold $ Z_{\Gamma \Delta}/T_\Gamma $ and an H-minimal Lagrangian submanifold of toric manifold $V_\Gamma$.
 \end{main}
 \begin{proof}
 We have a sequence of embeddings: $ \tilde{N} \hookrightarrow Z_{\Gamma \Delta} / T_\Gamma \hookrightarrow V_\Gamma$. Just as before the manifold $\tilde{N}$ is a Lagrangian submanifold in $V_\Gamma$ because the tangent space decomposes $\mathcal T_x \tilde{N}=\mathcal T_{R_{\Gamma \Delta}/ D_\Gamma} \oplus \mathcal T_{T_\Delta}$ into the real subspace and torus action subspace. We only have to note that symplectic form $\omega_{red}$ on $V_\Gamma$ is equal to the canonical Kaehler form, which is zero on the real part $R_\Gamma$, and thus will be zero on $R_{\Gamma \Delta}/D_\Gamma$.
 
-Let us prove H-minimality. We can consider only $T_\Delta$-invariant Hamiltonian variations. By Noether's theorem all these variations of $\tilde{N}$ will be lying inside $Z_{\Gamma \Delta} / T_\Gamma$. It is left to show that $\tilde{N}$ is minimal in $Z_{\Gamma \Delta} / T_\Gamma$. It follows from $U_{\Gamma \Delta}$ being minimal in $V_{\Gamma \Delta}$ with the appropriately corrected metric $\tilde{ \tilde{g}}^{ \frac {2} {n+l-m}}g$ on $V_{\Gamma \Delta}$ ($g$ is the standart metric on $V_\Gamma$). For this fact the reason is that conjugation is isometry on $V_\Gamma$ (just as on $\mathbb{C}^m$), and thus preserves the volume of the orbits $\tilde{\pi}^{-1}(x)$ . 
+Let us prove H-minimality. We can consider only $T_\Delta$-invariant Hamiltonian variations. By Noether's theorem all these variations of $\tilde{N}$ will be lying inside $Z_{\Gamma \Delta} / T_\Gamma$. It is left to show that $\tilde{N}$ is minimal in $Z_{\Gamma \Delta} / T_\Gamma$. It follows from $U_{\Gamma \Delta}$ being minimal in $V_{\Gamma \Delta}$ with the appropriately corrected metric $\tilde{ \tilde{g}} =( \Vo ^{ \frac {2} {n+l-m}} )g$ on $V_{\Gamma \Delta}$ ($g$ is the standart metric on $V_\Gamma$, $\Vo(x)=\Vol(\tilde{\pi}^{-1}(x) )$ is the volume of the orbit). For this fact the reason is that conjugation is isometry on $V_\Gamma$ (just as on $\mathbb{C}^m$), and thus preserves the volume of the orbits $\tilde{\pi}^{-1}(x)$ . 
 \end{proof}
 \begin{exam}
 
