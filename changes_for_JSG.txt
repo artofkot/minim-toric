@@ -1,0 +1,29 @@
+Theorem(first variation formula) 
+    'embedding $i$'  ---> 
+    'embedding $i: L \hookrightarrow M$'
+
+First efinition in 3.1 section
+    '$i_{X_i^\#}\omega=d \langle \mu (p), X_i^\# \rangle = d \mu_i$' --->
+    '$i_{X_i^\#}\omega=d \langle \mu (p), X_i \rangle = d \mu_i$]'
+
+Theorem A, after Vol(Nt, g) = Vol(π(Nt), g ̃).
+    elaborated a little on the proof so it becomes clearer
+
+In introduction
+     Also, based on the note of A.Mironov and T.Panov~\cite{MP2}, we give an explicit construction of H-minimal Lagrangian submanifolds in symplectic toric manifolds, which generalizes the result of A.Mironov.  --->
+     Also, based on the note of A.Mironov and T.Panov~\cite{MP2} where they refer to the results of Y.Dong, we give an explicit construction and independent proof of H-minimality of Lagrangian submanifolds in symplectic toric manifolds, which generalize the result of A.Mironov.
+
+proposition 4.2
+    The key observation is that the function $\Vo$ is invariant under the involution $\sigma \colon V_P$ induced by the complex conjugation. Indeed, the volume of an orbit depends only on the absolute values of the coordinates of points in this orbit. We have ---->
+    The key observation is that the function $\Vo$ (volume of the preimage) is invariant under the involution $\sigma \colon V_P$ induced by the complex conjugation. This is because conjugation is isometry on $\mathbb{C}^m$. In fact the volume of an orbit depends only on absolute values of the coordinates of points in the orbit. Thus we have
+
+5 section
+    added smoe notations and clarifications:
+    1)matrix $\Gamma \Delta$ is obtained by placing the matrix $\Gamma$ right on top of the matrix $\Delta$
+    2)Z_\Gamma \cap Z_\Delta is changed Z_{\Gamma \Delta}
+    and all other elements are denoted correspondingly
+    3)changed the commutative diagram
+    4)The groups $T_\Delta$ and $D_\Delta$ are defined similarly as the groups $T_\Gamma$ and $D_\Gamma$ --->
+    The groups $T_\Delta$, $T_{\Gamma \Delta}$, $D_\Delta$, and $D_{\Gamma \Delta}$ are defined similarly as the groups $T_\Gamma$ and $D_\Gamma$. Notice that $n+l$ should be $\ge m$ and $T_\Gamma^{m-n}$ is transverse to $T_\Delta^{m-l}$ inside $T_{\Gamma \Delta}^{2m-n-l} \subset T^m$, and all these three tori act freely on $Z_{\Gamma \Delta}$.
+    5)added the proof of theorem C
+
