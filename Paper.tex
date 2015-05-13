@@ -474,16 +474,16 @@ where $\gamma_{k1} > 0$, $c > 0$, $\gamma_{j2} > 0$, $\gamma_{i2} < 0$  for $1 \
 
 
 
-In~\cite{MP} it is proved that
-$$ N_l (p,q)= R_\Gamma \times_{D_\Gamma} T_\Gamma \approx (S^{p-1}\times S^{q-1}) \times_{\mathbb{Z}_2\times \mathbb{Z}_2} S^1 \times S^1,
+In~\cite{MP} it is proved that in this case
+$$ N_\Gamma = N_l (p,q)= R_\Gamma \times_{D_\Gamma} T_\Gamma \approx (S^{p-1}\times S^{q-1}) \times_{\mathbb{Z}_2\times \mathbb{Z}_2} S^1 \times S^1,
 $$
 where the actions on the right side are antipodal involutions, and on the left side they are given by
 \begin{align*}
-&\varphi_1: (u_1,\dots ,u_m)\rightarrow(-u_1,\dots,-u_k,-u_{k+1},\dots,-u_p,u_{p+1},\dots,u_m),\\
-&\varphi_2: (u_1,\dots ,u_m)\rightarrow(-u_1,\dots,-u_k,u_{k+1},\dots,u_p,-u_{p+1},\dots,-u_m).
+&\varphi_1: (u_1,\dots ,u_m)\rightarrow(-u_1,\dots,-u_l,-u_{l+1},\dots,-u_p,u_{p+1},\dots,u_m),\\
+&\varphi_2: (u_1,\dots ,u_m)\rightarrow(-u_1,\dots,-u_l,u_{l+1},\dots,u_p,-u_{p+1},\dots,-u_m).
 \end{align*}
 
-\noindent So the topological type of $N$ is defined by three numbers $p$,$q$ and $l$ where $p+q=m$ and $0 \leq l \leq p$. 
+\noindent So the topological type of $N_\Gamma$ is defined by three numbers $p$,$q$ and $l$ where $p+q=m$ and $0 \leq l \leq p$. 
 
 In general there is a fiber bundle 
 \[
@@ -509,7 +509,7 @@ N_l(p,q) \arrow[rightarrow]{r}{N(p)}
   & N(q)
 \end{tikzcd}
 \]
-which topology depends on $l$. If $p$ or $l+q$ is odd then this bundle is non-trivial, because we know that $N_l(p,q) \neq R_\Gamma \times T^2 = S^{p-1} \times S^{q-1} \times T^2 = N(p) \times N(q)$. If numbers $p$,$q$ and $l$ are even then this bundle is trivial, because of the fact that antipodal involution of odd-dimensional sphere (or even-dimensional vector space) is isotopic to the identity by rotations in two-planes.
+which topology depends on $l$. If $p$ and $q$ are even, but $l$ is odd, then this bundle is non-trivial, because we know that $N_l(p,q) \neq R_\Gamma \times T^2 = S^{p-1} \times S^{q-1} \times T^2 = N(p) \times N(q)$. If numbers $p$,$q$ and $l$ are even then this bundle is trivial, because of the fact that antipodal involution of odd-dimensional sphere (or even-dimensional vector space) is isotopic to the identity by rotations in two-planes.
 
 The manifold $N$ is a minimal submanifold of $Z_\Gamma \cong S^{2p-1} \times S^{2q-1}$ and an H-minimal Lagrangian submanifold of ${\mathbb C}^m$. If $p=q=2$ and $l=1$ we get a minimal embedding $N_1(2,2)\hookrightarrow Z_\Gamma \cong S^{3} \times S^{3}$, where $N_1(2,2)\rightarrow T^2$ is a nontrivial bundle with fiber $T^2$. In the same time there is a trivial bundle $T^4=T^2\times T^2=N_0(p,q)$ which minimally embeds into $Z_\Gamma \cong S^{3} \times S^{3}$. The latter embedding is a product of two minimal embeddings $T^2 \hookrightarrow S^3$ constructed from one quadric from the previous example.
 \end{exam}
@@ -534,7 +534,7 @@ and denote $Z_\Gamma \cap Z_\Delta$ as $Z_{\Gamma \Delta}$, quadric correspondin
 \item[(c)] $\gamma_1,\ldots,\gamma_m$ generate a lattice $L$ of maximal rank in ${\mathbb R}^{m-n}$.
 \end{itemize}
 
-\noindent We also assume that the polytopes associated with the intersections of quadrics  $Z_\Gamma$, $Z_\Delta$ and $Z_\Gamma \cap Z_\Delta$ are Delzant (for the construction of the polytope associated with an intersection of quadrics, see~\cite{MP}).
+\noindent We also assume that the polytopes associated with the intersections of quadrics  $Z_\Gamma$, $Z_\Delta$ and $Z_{\Gamma \Delta}$ are Delzant (for the construction of the polytope associated with an intersection of quadrics, see~\cite{MP}).
 
 The groups $T_\Delta$, $T_{\Gamma \Delta}$, $D_\Delta$, and $D_{\Gamma \Delta}$ are defined similarly as the groups $T_\Gamma$ and $D_\Gamma$. Notice that $n+l$ should be $\ge m$ and $T_\Gamma^{m-n}$ is transverse to $T_\Delta^{m-l}$ inside $T_{\Gamma \Delta}^{2m-n-l} \subset T^m$, and all these three tori act freely on $Z_{\Gamma \Delta}$.
 
@@ -561,9 +561,9 @@ Consider the $n$-dimensional submanifold $$\tilde{N} = \tilde{\pi} ^{-1}(U_{\Gam
 The manifold $\tilde{N}$ is a minimal submanifold of the manifold $ Z_{\Gamma \Delta}/T_\Gamma $ and an H-minimal Lagrangian submanifold of toric manifold $V_\Gamma$.
 \end{main}
 \begin{proof}
-We have a sequence of embeddings: $ \tilde{N} \hookrightarrow Z_{\Gamma \Delta} / T_\Gamma \hookrightarrow V_\Gamma$. Just as before the manifold $\tilde{N}$ is a Lagrangian submanifold in $V_\Gamma$ because the tangent space decomposes $\mathcal T_x \tilde{N}=\mathcal T_{R_{\Gamma \Delta}/ D_\Gamma} \oplus \mathcal T_{T_\Delta}$ into the real subspace and torus action subspace. We only have to note that symplectic form $\omega_{red}$ on $V_\Gamma$ is equal to the canonical Kaehler form, which is zero on the real part $R_\Gamma$, and thus will be zero on $R_{\Gamma \Delta}/D_\Gamma$.
+We have a sequence of embeddings: $ \tilde{N} \hookrightarrow Z_{\Gamma \Delta} / T_\Gamma \hookrightarrow V_\Gamma$. As before the manifold $\tilde{N}$ is a Lagrangian submanifold in $V_\Gamma$ because the tangent space decomposes $\mathcal T_x \tilde{N}=\mathcal T_{R_{\Gamma \Delta}/ D_\Gamma} \oplus \mathcal T_{T_\Delta}$ into the real subspace and the torus action subspace. We only have to note that symplectic form $\omega_{red}$ on $V_\Gamma$ is equal to the canonical Kaehler form, which is zero on the real part $R_\Gamma$, and thus will be zero on $R_{\Gamma \Delta}/D_\Gamma$.
 
-Let us prove H-minimality. We can consider only $T_\Delta$-invariant Hamiltonian variations. By Noether's theorem all these variations of $\tilde{N}$ will be lying inside $Z_{\Gamma \Delta} / T_\Gamma$. It is left to show that $\tilde{N}$ is minimal in $Z_{\Gamma \Delta} / T_\Gamma$. It follows from $U_{\Gamma \Delta}$ being minimal in $V_{\Gamma \Delta}$ with the appropriately corrected metric $\tilde{ \tilde{g}} =( \Vo ^{ \frac {2} {n+l-m}} )g$ on $V_{\Gamma \Delta}$ ($g$ is the standart metric on $V_\Gamma$, $\Vo(x)=\Vol(\tilde{\pi}^{-1}(x) )$ is the volume of the orbit). For this fact the reason is that conjugation is isometry on $V_\Gamma$ (just as on $\mathbb{C}^m$), and thus preserves the volume of the orbits $\tilde{\pi}^{-1}(x)$ . 
+Let us prove H-minimality. We can consider only $T_\Delta$-invariant Hamiltonian variations. By Noether's theorem all these variations of $\tilde{N}$ will be lying inside $Z_{\Gamma \Delta} / T_\Gamma$. It is left to show that $\tilde{N}$ is minimal in $Z_{\Gamma \Delta} / T_\Gamma$. As before in Theorem~\ref{theoA}, this follows from $U_{\Gamma \Delta}$ being minimal in $V_{\Gamma \Delta}$ with the appropriately corrected metric $\tilde{ \tilde{g}} =( \Vo ^{ \frac {2} {n+l-m}} )g$ on $V_{\Gamma \Delta}$, where $g$ is the standart metric on $V_\Gamma$, and function $\Vo(x)=\Vol(\tilde{\pi}^{-1}(x) )$ is the volume of the orbit. For this fact the reason is that conjugation is isometry on $V_\Gamma$ (just as on $\mathbb{C}^m$), and thus preserves the volume of the orbits $\tilde{\pi}^{-1}(x)$ . 
 \end{proof}
 \begin{exam}
 
