@@ -1,0 +1,44 @@
+List of changes:
+
+1.In Theorem 2.1(first variation formula) 
+    'embedding $i$'  ---> (changed to)
+    'embedding $i: L \hookrightarrow M$'
+
+2.In First definition in 3.1 section
+    '$i_{X_i^\#}\omega=d \langle \mu (p), X_i^\# \rangle = d \mu_i$' --->
+    '$i_{X_i^\#}\omega=d \langle \mu (p), X_i \rangle = d \mu_i$]'
+
+3.In Theorem A, after Vol(Nt, g) = Vol(π(Nt), g ̃).
+    elaborated a little on the proof so it becomes clearer
+
+4.In the introduction
+     Also, based on the note of A.Mironov and T.Panov~\cite{MP2}, we give an explicit construction of H-minimal Lagrangian submanifolds in symplectic toric manifolds, which generalizes the result of A.Mironov.  --->
+     Also, based on the note of A.Mironov and T.Panov~\cite{MP2} where they refer to the results of Y.Dong, we give an explicit construction and independent proof of H-minimality of Lagrangian submanifolds in symplectic toric manifolds, which generalize the result of A.Mironov.
+
+5.In the beginning of 5th section:
+     Here we review the construction of Mironov and Panov [13] and give a more explicit proof of their main theorem, 
+     which is independent of the results of [5].
+
+6.In the proposition 4.2
+    The key observation is that the function $\Vo$ is invariant under the involution $\sigma \colon V_P$ induced by the complex conjugation. Indeed, the volume of an orbit depends only on the absolute values of the coordinates of points in this orbit. We have ---->
+    The key observation is that the function $\Vo$ (volume of the preimage) is invariant under the involution $\sigma \colon V_P$ induced by the complex conjugation. This is because conjugation is isometry on $\mathbb{C}^m$. In fact the volume of an orbit depends only on absolute values of the coordinates of points in the orbit. Thus we have
+
+7.In the 5 section
+    added some notations and clarifications:
+    a)matrix $\Gamma \Delta$ is obtained by placing the matrix $\Gamma$ right on top of the matrix $\Delta$
+    b)Z_\Gamma \cap Z_\Delta is changed to Z_{\Gamma \Delta}
+    and all other elements are denoted correspondingly
+    c)changed the commutative diagram
+    d)The groups $T_\Delta$ and $D_\Delta$ are defined similarly as the groups $T_\Gamma$ and $D_\Gamma$ --->
+    The groups $T_\Delta$, $T_{\Gamma \Delta}$, $D_\Delta$, and $D_{\Gamma \Delta}$ are defined similarly as the groups $T_\Gamma$ and $D_\Gamma$. Notice that $n+l$ should be $\ge m$ and $T_\Gamma^{m-n}$ is transverse to $T_\Delta^{m-l}$ inside $T_{\Gamma \Delta}^{2m-n-l} \subset T^m$, and all these three tori act freely on $Z_{\Gamma \Delta}$.
+    e)added the proof of theorem C
+
+8.In the example 4.5
+    Added explanations of topology of N_l(p,q). Described how to get the fiber bundles, and explained why they are trivial or not trivial in the corresponding cases.
+
+9.In example 5:
+    fixed the error in example (a) and (b). It was written that Z_\Gamma=empty set, whereas the set of quadrics is empty, and the Z_\Gamma=C^m,
+
+10.Changed some citations of published papers - deleted link to the arxiv and adding citation to the journal.
+
+
